@@ -1,8 +1,6 @@
 
 # Título do Projeto
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
-
 Bem-vindos(as) ao meu repositório, o qual se destina ao estudo de desenvolvimento web, oferecido pela Dio.me, em parceria com o Santander.
 
 ## Meu primeiro site
