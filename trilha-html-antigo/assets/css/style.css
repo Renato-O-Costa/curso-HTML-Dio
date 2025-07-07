@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Logo e topo */
+.logo {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Barra divisória */
+.bar {
+    height: 4px;
+    background-color: #0077cc;
+}
+
+/* Área de conteúdo com três colunas */
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Sidebar (menu lateral esquerdo) */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+/* Conteúdo central */
+.main {
+    flex: 2;
+    background-color: #fff;
+    padding: 1rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+/* Navegação por âncoras (lateral direita) */
+.anchors {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0077cc;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Links */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tabelas, listas, mídias */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+img, video, audio {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar, .main, .anchors {
+        border: none;
+    }
+}

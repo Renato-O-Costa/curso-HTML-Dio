@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+            table {
+                border: #4CAF50 solid;  /* Cor da borda da tabela */
+            }
+        table thead th {
+            background-color: #4CAF50;  /* Cor de fundo do cabeçalho */
+            color: white;  /* Cor do texto do cabeçalho */
+            padding: 5px;  /* Espaçamento interno das células do cabeçalho */
+        }
+        table tfoot td {
+            background-color: #d6f5d6;  /* Cor de fundo do rodapé */
+            text-align: center;  /* Alinhamento do texto no rodapé */
+            padding: 8px;  /* Espaçamento interno das células do rodapé */
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #8cf5f2;  /* Cor de fundo para linhas pares */
+        }
+        table tbody tr:hover {
+            background-color: #d9d9d9;  /* Cor de fundo ao passar o mouse */
+            cursor: pointer;  /* Muda o cursor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <table width="250px" align="left" cellspacing="0" cellpadding="5">
+        <caption>Tabela de dados pessoais</caption>
+        <thead>
+            <tr>  <!-- Linha 1 -->
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>  <!-- Cria as células-->
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  <!-- Linha 2 -->
+                <td>João</td>
+                <td>25</td>  <!-- Preenche as células -->
+                <td>Masculino</td>
+            </tr>
+            <tr>  <!-- Linha 3 -->
+                <td>Maria</td>
+                <td>30</td>  <!-- Preenche as células -->
+                <td>Feminino</td>
+            </tr>
+            <tr>  <!-- Linha 4 -->
+                <td>José</td>
+                <td>28</td>  <!-- Preenche as células -->
+                <td>Masculino</td>
+            </tr>
+            <tr>  <!-- Linha 5 -->
+                <td>Ana</td>
+                <td>22</td>  <!-- Preenche as células -->
+                <td>Feminino</td>
+            </tr>
+            <tr>  <!-- Linha 6 -->
+                <td>Carlos</td>
+                <td>35</td>  <!-- Preenche as células -->
+                <td>Masculino</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>  <!-- Linha 7 -->
+                <td colspan="3">Total de pessoas: 5</td>  <!-- Célula que abrange todas as colunas -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

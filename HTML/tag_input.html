@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag input e seus atributos</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Formulário enviado com sucesso!')" target="_blank" method="post" action="#" autocomplete="off">
+        <label for="stext">Text: </label>
+        <input type="text" id="stext" name="stext"><br><br>
+        <label>Number: </label>
+        <input type="number" min="0" step="2" max="10"><br><br>
+        <label>Range: </label>
+        <input type="range" min="0" max="100" value="35"><br><br>
+        <label>Color: </label>
+        <input type="color" value="#ff0000"><br><br>
+        <label>Button: </label>
+        <input type="button" value="Enviar" onclick="alert('Botão clicado!')"><br>
+    </form>
+</body>
+</html>
